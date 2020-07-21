@@ -8,14 +8,15 @@ import lombok.ToString;
 @Getter @Setter @AllArgsConstructor
 public class FileInfo {
     private String fileName;
+    private String filePath;
     private Long size;
-    private String checkSum;
+    //private String checkSum;
 
     @Override
     public String toString() {
         return
-                "fileName=" + fileName +
+                "filePath=" + filePath +
                 ", size=" + size +
-                ", checkSum=" + checkSum ;
+                ", fileName=" + fileName ;
     }
 }
